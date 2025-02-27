@@ -1,0 +1,31 @@
+This is the notes of the react library
+
+lecture 1 :
+1)If you want to use the react without the framework then use vite and Parcel
+coz these are the bundler . it combines many JS files into a single file .
+2)With React library there we get attachements like react-dom and react-Native
+3)How to make a react project?          npm is the mode package installer which allows us to use the library
+  npx create-react-app(project Name)    npx means if you want to use that functionality without downloading the package
+  this is the heavy bundle size packages so
+  Another way to install depencies and package :
+  Use Vite or Parcel these are utilities(Where the vite is the bundler)
+
+How to start your project ?
+npm run start
+
+Create react app is not the better otion to make react apps rather use with the Vite.
+commands to create and react projects using vite.
+npm create vite@latest
+
+Lecture 2 :
+You can export the function which returns the html tag in the render as a tag like <App/>.
+In Vite project you don't need to to create an element and then render the JSX tag.
+You have to fucntion or the JSX tag in the uppper case both while importing and rendering in vite.
+
+While working with the Create react app you have to make in capitalize the names.
+
+
+
+
+
+
