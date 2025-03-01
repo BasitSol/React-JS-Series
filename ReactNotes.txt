@@ -25,6 +25,29 @@ You have to fucntion or the JSX tag in the uppper case both while importing and 
 While working with the Create react app you have to make in capitalize the names.
 
 
+************************************ DAY 2 **************************************************************
+You can make your own version of the custom react element.
+React understand the JSX which means the html is being integrated there .
+React use the bundler like vite and babel . which actually transpiler the syntax and make the tree.
+
+You can also make the element using the React.createElement(
+  'a',
+  {href : "ww.com", target : '_blank'},
+  'click me to visit Google'
+)  <= this method take the object
+
+In JSX how you can inject the variables ?
+const username = "this is"
+you can inject it using the curly braces {username}.
+
+Interview : {username} <= this is a evaluated expression. where you write the final output of the JS.like here
+i wrote the variable name after initailizing it some value . also you can write some evaluations(if, functions)
+you have to write it above and just write the final outcome here in the curly braces.
+
+
+
+
+
 
 
 
