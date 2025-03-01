@@ -45,6 +45,21 @@ i wrote the variable name after initailizing it some value . also you can write 
 you have to write it above and just write the final outcome here in the curly braces.
 
 
+************************* DAY 3 **********************************************************
+Hooks : Used for the state Management and the UI Updation
+
+use state hook :
+let [counter, setcounter] = useState(15)
+here in array first element is the starting point of the variable and second variable helps for the Updation
+of the first variable . You can use any other name for these two variables. and useState is default 15 initial value
+
+just use the initial varible counter anywhere and when you make a function and call the setcounter() method
+react will automatically change state and UI updation .
+
+
+
+
+
 
 
 
