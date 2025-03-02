@@ -56,6 +56,83 @@ of the first variable . You can use any other name for these two variables. and 
 just use the initial varible counter anywhere and when you make a function and call the setcounter() method
 react will automatically change state and UI updation .
 
+********************************* DAY 4 **********************************************************
+
+1.The createRoot create's its own DOM and then compare it with the web browser's DOM and only update those components which are actually updated.
+2.But the browser removes the whole DOM and then recrates the whole DOM with the updated values this is called reload.
+3. However virtual DOM tracks whole DOM like a tree like structure and updates only those values which were only changed.
+4. But some values depends on network call so if we update a value it might get update immediately via a network call.
+5. So we will have to update it again. To avoid this overhead we can drop the updation calls for the immediate value update.
+6. The current algo used by the React is called the React Fibre algo.
+7. The algo react uses to differentiate the web browser's tree and React's tree formed through create root is called reconciliation.
+8. Reconciliation is the algo behind what popularly known as the Virtual-DOM.
+9.In UI it is not necessary for every update to be applied immediately. 
+10.In fibre we can pause, assign, reuse, abort . 
+
+Interview Perspective :
+Why keys are imp in diffing?
+In fibre algo if you want to improve the list performance you have to use keys in every iterations.
+
+****************************************** DAY 5 ****************************************************
+Props : Props make the components reusable. like if we made a card then place it in component and use it 
+somewhere again.
+
+Props gives us an object . Initially it will be empty . when you give the value from the the card component
+in app.JSX . like <Card channel ="This is react" />.
+Then in the Card.jsx you will see props becomes updated and now in object there will be that channel ="This is react"
+inside. You can't pass the array and object directly from app.JSX like <Card channel = "Test" myarr{} />
+for that to work well. 
+You have to declare the array or object above the return in app.JSX.
+like let myObj = {
+  username : "Basit",
+  age : 21
+}
+Now you can pass in inform of variable ref
+like <Card channel = "Test" someobj = {myObj} />     Don't forget to pass it in form of variable {} braces
+you can also pass the array the same way . 
+That's how you can pass the value from one component to another component.
+
+By default the Card function will get the props it's in react feature.
+React props -: to send data from one component to another.
+
+Props are sent inside the component brackets.
+eg. <Card channel = "chaiaurcode"/> 
+1 Always use curly brackets for a variable { variableName } to send it as props.
+Props can be in any form but passed as a variable.
+eg. <Card username = "chaiaurcode"/> 
+eg. <Card object = "myobject"/> 
+eg. <Card array = "myarray"/> 
+
+2 props send the data in the object form to the component.
+so to access ->
+                   props.properties or {properties ="defaultValue if props doesn't receive any value"}
+eg.props.username
+
+
+Interview Question :
+In useState hook when we start it with 15.
+Then in function. when we use it multiple times then what will happen ? will it be 19 direct or 16?
+SetCounter(counter+1)
+SetCounter(counter+1)
+SetCounter(counter+1)
+SetCounter(counter+1)
+
+Second Syntax :
+SetCounter(prevCounter => prevCounter + 1)
+
+Detailed explaination of why does first syntax only updates the count once:
+Initial State: Assume count is initially 69.
+First Call: setCount(count + 1) schedules a state update to set count to 70 (69 + 1).
+Second Call: setCount(count + 1) schedules another state update to set count to 70 (69 + 1), because count is still 69 in this scope.
+Third Call: setCount(count + 1) schedules yet another state update to set count to 70 (69 + 1), again because count is still 69 in this scope.
+
+In case of functional updater syntax React ensures that changes are made to the latest state of the count hence each function gets access to the latest state of the count variable:
+First Call: setCount(count =>count+1) schedules a state update to set count to 70
+Second Call : schedules a state update to set count to (70+1) because count is now 70 in this scope and so on...
+
+
+
+
 
 
 
