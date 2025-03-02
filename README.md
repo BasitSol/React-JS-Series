@@ -47,7 +47,8 @@ Welcome to my **React JS learning journey**! This repository documents my daily 
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
 - ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
-- ![Tailwind CSS](https://img.shields.io/badge/Vite-646CFF?logo=tailwindcss&logoColor=white)
+- ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?logo=tailwindcss&logoColor=white)
+
 
 ---
 
